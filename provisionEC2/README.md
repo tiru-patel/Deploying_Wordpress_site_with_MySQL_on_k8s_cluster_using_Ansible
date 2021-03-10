@@ -18,6 +18,7 @@ Role Variables
               - k8s_master
               - k8s_slave1
               - k8s_slav2
+- Also, you can include VPC, SubnetID, AMI, counts accordingly in vars file. But, here to simplicity, I have made it fixed to default configuration on AWS. 
 
 Example Playbook
 ----------------
