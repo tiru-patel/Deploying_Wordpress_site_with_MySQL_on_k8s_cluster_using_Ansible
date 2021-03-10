@@ -1,38 +1,19 @@
-Role Name
+k8s_master
 =========
 
-A brief description of the role goes here.
+This role is used to configure Master node of kubernetes cluster. 
 
-Requirements
-------------
-
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
-
-Role Variables
---------------
-
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
 
 Dependencies
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+This role is dependent on **provisionEC2** role. This role fetches the hosts dynamically using dynamic inventory. So, it is necessary to launch instances first and then this role to be run so that dynamic inventory can fetch the IP and configure accordingly. So, here the main concept of tagging the instance come in play. So, we can ping a particular host using it's tag name. For ex: If a OS has tag "k8s_Master", then its host will be **"tag_Name_k8s_Master"**. So, calling this role, we can put the hosts as ["tag_Name_k8s_Master"].
 
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
-    - hosts: servers
+    - hosts: ["tag_Name_k8s_Master"]
       roles:
-         - { role: username.rolename, x: 42 }
+         - /root/k8s_play/role/k8s_Master (complete path of the role)
 
-License
--------
 
-BSD
-
-Author Information
-------------------
-
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
