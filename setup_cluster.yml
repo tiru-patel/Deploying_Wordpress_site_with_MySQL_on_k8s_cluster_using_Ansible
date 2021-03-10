@@ -1,0 +1,16 @@
+- hosts: ['tag_Name_k8s_Master']
+  roles: 
+    - name: configure Master node
+      role: /root/k8s_play/role/k8s_master
+
+- hosts: ['tag_Name_k8s_Slave1','tag_Name_k8s_Slave2']
+  vars_prompt: 
+    - name: "master_token"
+      prompt: "Please enter token to JOIN master node : "
+      private: no
+
+  roles: 
+    - name: configure slave node   
+      role: /root/k8s_play/role/k8s_slaves
+
+

@@ -1,0 +1,21 @@
+---
+# tasks file for provisionEC2
+
+- name: launch ec2 instances for k8s cluster 
+  ec2: 
+    key_name: ansible 
+    instance_type: t2.micro 
+    image: ami-0eeb03e72075b9bcc
+    wait: yes 
+    count: 1
+    vpc_subnet_id: subnet-bb646dd3
+    state: present 
+    group: k8s 
+    region: ap-south-1 
+    assign_public_ip: yes 
+    aws_access_key: "{{ accessKey }}"
+    aws_secret_key: "{{ secretKey }}"
+    wait_timeout: 600 
+    instance_tags:
+      Name: "{{ item }}"
+  loop: "{{ OS_Name }}"

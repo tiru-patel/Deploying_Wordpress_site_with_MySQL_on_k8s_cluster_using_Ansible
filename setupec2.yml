@@ -1,0 +1,5 @@
+- hosts: localhost 
+  roles:
+    - name: provision ec2 instance 
+      role: /root/k8s_play/role/provisionEC2
+
