@@ -1,8 +1,8 @@
 ---
 # vars file for provisionEC2
 
-accessKey: AKIAXXP7PBQWXGMON6SF
-secretKey: 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
+accessKey: "Enter accesskey here"
+secretKey: "Enter secretkey here"
 OS_Name: 
   - "k8s_Master"
   - "k8s_Slave1"
