@@ -55,4 +55,6 @@ Similarly, you can create other roles.
 
 ![finalop](https://miro.medium.com/max/875/1*6zMKuAOSY0hFnDTU2f5fEQ.png) 
 
+:pushpin:Optional: You can merge both the playbooks setupec2.yml and setup_cluster.yml by providing a long pause in between launching ec2 and configuring master node. This is necessary as it would take some time for SSH to come up so that Ansible can further do configurations.
+
 To better understand all the internal concepts and configuration, feel free to read my [article](https://tirth1272.medium.com/%EF%B8%8Fcreating-a-multi-node-kubernetes-cluster-on-aws-using-ansible-%EF%B8%8F-6acbb6ffc21f). If you have any queries or suggestions, feel free to contact me on [Linkedin](https://www.linkedin.com/in/tirupatel/).
