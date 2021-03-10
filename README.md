@@ -1,4 +1,4 @@
-# :sparkles: Kubernetes Multinode Cluster on AWS using Ansible :sparkles:
+# :sparkles:Kubernetes Multinode Cluster on AWS using Ansible:sparkles:
 Creating our own multinode kubernetes cluster is very tedious task. So, here is the solution for automating the creation of kubernetes multinode cluster using Ansible on AWS. 
 
 ## :heavy_exclamation_mark: Steps to be followed to achieve this task :heavy_exclamation_mark: 
