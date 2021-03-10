@@ -54,3 +54,5 @@ Similarly, you can create other roles.
 :pushpin: Finally, you can verify by the output that, we can run kubectl command. That means it is configured successdfully :ok_hand: 
 
 ![finalop](https://miro.medium.com/max/875/1*6zMKuAOSY0hFnDTU2f5fEQ.png) 
+
+To better understand all the internal concepts and configuration, feel free to read my [article](https://tirth1272.medium.com/%EF%B8%8Fcreating-a-multi-node-kubernetes-cluster-on-aws-using-ansible-%EF%B8%8F-6acbb6ffc21f). If you have any queries or suggestions, feel free to contact me on [Linkedin](https://www.linkedin.com/in/tirupatel/).
