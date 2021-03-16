@@ -15,8 +15,10 @@ Optional: You can add all the environment variables as variable like root passwo
 Example Playbook
 ----------------
 
-    - hosts: ['tah_Name_k8s_Master']
-      roles:
-         - 
+    - hosts: ["tag_Name_k8s_Master"]
+      roles: 
+        - name: configure wordpress and mysql database and expose wordpress 
+          role: /root/k8s_wp_sql_play/wpSQL/ 
+
 
 
