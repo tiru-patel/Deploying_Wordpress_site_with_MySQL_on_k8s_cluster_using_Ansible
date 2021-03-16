@@ -64,7 +64,6 @@ Similarly, you can create other roles.
 :pushpin: Put all the relevant details and then we will be able to suucessfully connect to the Wordpress site
 ![logindet](https://miro.medium.com/max/875/1*8VGnOz0-bmPovksatNnorg.png)
 
-<br>
 ### :smile: Now, you can see your wordpress site hosted :smile:
 ![finalwp](https://miro.medium.com/max/875/1*NWkAo6oeLGutxs_Ozyr6rQ.png)
 
