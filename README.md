@@ -1,5 +1,5 @@
 # :sparkles:Deploying WordPress site with MySQL Database on Kubernetes cluster using Ansible:sparkles:
-Creating our own multinode kubernetes cluster is very tedious task. So, here is the solution for automating the creation of kubernetes multinode cluster using Ansible on AWS. 
+Creating our own multinode kubernetes cluster is very tedious task.Also, deploying websites, eg: WordPress which is highly integrated and dependent on MySQL database in a manual way is very slow and prone to errors.So, here is the solution for automating the creation of kubernetes multinode cluster and deploying wordpress site using Ansible on AWS. 
 
 ## :heavy_exclamation_mark: Steps to be followed to achieve this task :heavy_exclamation_mark: 
 
