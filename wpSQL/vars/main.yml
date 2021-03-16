@@ -1,0 +1,9 @@
+---
+# vars file for wpSQL
+ 
+db_pod_name: mydb 
+wp_pod_name: mywp
+root_pass: redhat 
+db_name: db1 
+user_name: tirth
+pass: redhat
