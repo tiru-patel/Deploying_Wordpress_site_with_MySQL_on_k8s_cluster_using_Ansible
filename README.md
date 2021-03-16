@@ -55,8 +55,16 @@ Similarly, you can create other roles.
 
 :pushpin: Finally, you can verify by the output that, we can run kubectl command. That means it is configured successdfully :ok_hand: 
 
-![finalop](https://miro.medium.com/max/875/1*6zMKuAOSY0hFnDTU2f5fEQ.png) 
+:pushpin: Now, the wpSQL role will run on Master Node as Host. As while configuring, we have configured Master node as k8s cluster client, so we launch pods using Master. 
+![finalop](https://miro.medium.com/max/875/1*-AcTVfnWF0BbypMIaNvlQw.png) 
 
-:pushpin:Optional: You can merge both the playbooks setupec2.yml and setup_cluster.yml by providing a long pause in between launching ec2 and configuring master node. This is necessary as it would take some time for SSH to come up so that Ansible can further do configurations.
+:pushpin: Now, the pod is exposed on a random port through which clients can connect. You can connect to the wordpress site using port number. 
+![wpstart](https://miro.medium.com/max/875/1*Y7UMeYsk2YLnTKbRq3kNLw.png) 
 
-To better understand all the internal concepts and configuration, feel free to read my [article](https://tirth1272.medium.com/%EF%B8%8Fcreating-a-multi-node-kubernetes-cluster-on-aws-using-ansible-%EF%B8%8F-6acbb6ffc21f). If you have any queries or suggestions, feel free to contact me on [Linkedin](https://www.linkedin.com/in/tirupatel/).
+:pushpin: Put all the relevant details and then we will be able to suucessfully connect to the Wordpress site
+![logindet](https://miro.medium.com/max/875/1*8VGnOz0-bmPovksatNnorg.png)
+
+:smile: Now, you can see your wordpress site hosted :smile:
+![finalwp](https://miro.medium.com/max/875/1*NWkAo6oeLGutxs_Ozyr6rQ.png)
+
+To better understand all the internal concepts and configuration, feel free to read my [article](https://tirth1272.medium.com/automate-kubernetes-clusterusing-ansible-18238dae6239). If you have any queries or suggestions, feel free to contact me on [Linkedin](https://www.linkedin.com/in/tirupatel/).
