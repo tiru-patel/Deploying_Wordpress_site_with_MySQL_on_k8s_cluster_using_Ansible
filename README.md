@@ -64,7 +64,8 @@ Similarly, you can create other roles.
 :pushpin: Put all the relevant details and then we will be able to suucessfully connect to the Wordpress site
 ![logindet](https://miro.medium.com/max/875/1*8VGnOz0-bmPovksatNnorg.png)
 
-:smile: Now, you can see your wordpress site hosted :smile:
+<br>
+### :smile: Now, you can see your wordpress site hosted :smile:
 ![finalwp](https://miro.medium.com/max/875/1*NWkAo6oeLGutxs_Ozyr6rQ.png)
 
 To better understand all the internal concepts and configuration, feel free to read my [article](https://tirth1272.medium.com/automate-kubernetes-clusterusing-ansible-18238dae6239). If you have any queries or suggestions, feel free to contact me on [Linkedin](https://www.linkedin.com/in/tirupatel/).
