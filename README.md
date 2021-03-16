@@ -36,32 +36,32 @@ Similarly, you can create other roles.
 <br>
 
 ### :dart: Setting up main playbooks :dart:
-:pushpin: Here, setupec2.yml and setup_cluster are the main playbook. 
+##### :pushpin: Here, setupec2.yml and setup_cluster are the main playbook. 
 
-:pushpin: setupec2.yml playbook will launch 3 instances for us. Here, I have made the VPC, Subnet, Image, instance type fixed. You can add as a variable and include the variables in /vars/main.yml file in the provisionEC2 role. Also, the *OS_Name* list consists of tags to be provided to the instances launched. 
+##### :pushpin: setupec2.yml playbook will launch 3 instances for us. Here, I have made the VPC, Subnet, Image, instance type fixed. You can add as a variable and include the variables in /vars/main.yml file in the provisionEC2 role. Also, the *OS_Name* list consists of tags to be provided to the instances launched. 
 
 ![ec2launch](https://miro.medium.com/max/875/1*lvKRd7sTC1_dwi4unz102Q.png) 
 
-:pushpin: After running setupec2.yml playbook, wait for ssh to come up. You can also verify launched instances on AWS Portal. 
+##### :pushpin: After running setupec2.yml playbook, wait for ssh to come up. You can also verify launched instances on AWS Portal. 
 
 ![ec2portal](https://miro.medium.com/max/875/1*UhEG8iIJCM0k9qmhAEGLaA.png)
 
-:pushpin: Now, run the setup_cluster.yml playbook to configure master and two slave nodes. 
+##### :pushpin: Now, run the setup_cluster.yml playbook to configure master and two slave nodes. 
 
 
-:exclamation: Copy the master token and provide as input when slaves role run. :exclamation:
+#### :exclamation: Copy the master token and provide as input when slaves role run. :exclamation:
 
 ![asktoken](https://miro.medium.com/max/875/1*7lEocQjVgZavp0r2XxL9Kw.png) 
 
-:pushpin: Finally, you can verify by the output that, we can run kubectl command. That means it is configured successdfully :ok_hand: 
+##### :pushpin: Finally, you can verify by the output that, we can run kubectl command. That means it is configured successdfully :ok_hand: 
 
-:pushpin: Now, the wpSQL role will run on Master Node as Host. As while configuring, we have configured Master node as k8s cluster client, so we launch pods using Master. 
+##### :pushpin: Now, the wpSQL role will run on Master Node as Host. As while configuring, we have configured Master node as k8s cluster client, so we launch pods using Master. 
 ![finalop](https://miro.medium.com/max/875/1*-AcTVfnWF0BbypMIaNvlQw.png) 
 
-:pushpin: Now, the pod is exposed on a random port through which clients can connect. You can connect to the wordpress site using port number. 
+##### :pushpin: Now, the pod is exposed on a random port through which clients can connect. You can connect to the wordpress site using port number. 
 ![wpstart](https://miro.medium.com/max/875/1*Y7UMeYsk2YLnTKbRq3kNLw.png) 
 
-:pushpin: Put all the relevant details and then we will be able to suucessfully connect to the Wordpress site
+##### :pushpin: Put all the relevant details and then we will be able to suucessfully connect to the Wordpress site
 ![logindet](https://miro.medium.com/max/875/1*8VGnOz0-bmPovksatNnorg.png)
 
 ### :smile: Now, you can see your wordpress site hosted :smile:
