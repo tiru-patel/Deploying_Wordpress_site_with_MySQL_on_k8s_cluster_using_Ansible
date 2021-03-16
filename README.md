@@ -15,7 +15,7 @@ Creating our own multinode kubernetes cluster is very tedious task.Also, deployi
 
 :six: Create a playbook that will run provisionEC2 role. Here, setupec2.yml playbook. 
 
-:seven: Create a playbook that will run k8s_master and k8s_slaves role. Here, setup_cluster.yml file. 
+:seven: Create a playbook that will run k8s_master,k8s_slaves and wpSQL role. Here, setup_cluster.yml file. 
 
  <br>
 To create a role, use command :leftwards_arrow_with_hook:
