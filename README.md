@@ -1,4 +1,4 @@
-# :sparkles:Kubernetes Multinode Cluster on AWS using Ansible:sparkles:
+# :sparkles:Deploying WordPress site with MySQL Database on Kubernetes cluster using Ansible:sparkles:
 Creating our own multinode kubernetes cluster is very tedious task. So, here is the solution for automating the creation of kubernetes multinode cluster using Ansible on AWS. 
 
 ## :heavy_exclamation_mark: Steps to be followed to achieve this task :heavy_exclamation_mark: 
@@ -11,9 +11,11 @@ Creating our own multinode kubernetes cluster is very tedious task. So, here is 
 
 :four: Create a ansible role to configure *kubernetes slave* nodes. Here, k8s_slaves role. 
 
-:five: Create a playbook that will run provisionEC2 role. Here, setupec2.yml playbook. 
+:five: Create a ansible role to create Wordpress and MySQL pods. Here, wpSQL role. 
 
-:six: Create a playbook that will run k8s_master and k8s_slaves role. Here, setup_cluster.yml file. 
+:six: Create a playbook that will run provisionEC2 role. Here, setupec2.yml playbook. 
+
+:seven: Create a playbook that will run k8s_master and k8s_slaves role. Here, setup_cluster.yml file. 
 
  <br>
 To create a role, use command :leftwards_arrow_with_hook:
